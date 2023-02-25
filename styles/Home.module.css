@@ -1,0 +1,287 @@
+.html {
+    scroll-behavior: smooth;
+}
+
+/* navbar styling */
+.navbar {
+    display: flex;
+    background-color: white;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+    position: relative;
+    height: 5.5vw;
+    width: 100%;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.appLogo {
+    width:17vw;
+    height: auto;
+}
+
+.navbarLinks {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style-type: none;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0.25vw;
+    margin-right: 0.25vw;
+    font-size: 1.4vw;
+    padding: 1.2vw;
+    border-radius: 0.6vw;
+    transition: 0.12s;
+}
+
+.links:hover {
+    color: white;
+    background-color: #ed7643;
+    transition: 0.12s;
+}
+
+.githubLink:hover {
+    filter: brightness(0) saturate(100%) invert(85%) sepia(100%) saturate(0%) hue-rotate(172deg) brightness(103%) contrast(102%);
+    transition: 0.12s;
+}
+
+
+/* main container styling */
+.mainContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+/* frontContainer styles */
+.frontContainer {
+    width: 100%;
+    height: 50vw;
+    background: rgb(255,111,0);
+    background: linear-gradient(90deg, rgba(255,111,0,1) 0%, rgba(255,149,0,1) 45%, rgba(255,255,255,1) 100%);
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding-top: 2vw;
+    padding-bottom: 4vw;
+}
+
+.layers {
+    position: absolute;
+    top: 2vw;
+    right: 0;
+    height: 55vw;
+    width: 55vw;
+    background-position: right;
+    background-size: cover;
+}
+
+.frontContainerContainer {
+    z-index: 10;
+    width: 50vw;
+    margin: 4.5vw;
+}
+
+.frontContainerText {
+    color: white;
+    font-size: 5vw;
+}
+
+.getStartedButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3vw;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    transition: 0.12s;
+}
+
+.buttonText {
+    margin-right: 5px;
+}
+
+.getStartedButton:hover > .rightArrow {
+    transform: translateX(30%);
+    transition: 0.12s
+}
+
+.getStartedButton:hover > .buttonText {
+    text-decoration: underline;
+    transition: 0.12s;
+}
+
+/* layers for parallax effect */
+.layers:nth-child(2) {
+    background-image: url("../public/star.png");
+}
+.layers:nth-child(3) {
+    background-image: url("../public/planet1.png");
+}
+.layers:nth-child(4) {
+    background-image: url("../public/planet2.png");
+}
+.layers:nth-child(5) {
+    background-image: url("../public/planet3.png");
+}
+.layers:nth-child(6) {
+    background-image: url("../public/planet4.png");
+}
+.layers:nth-child(7) {
+    background-image: url("../public/planet5.png");
+}
+.layers:nth-child(8) {
+    background-image: url("../public/astro.png");
+}
+
+/* team container styling */
+.teamContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 10vh;
+    background: linear-gradient(90deg, rgba(255,111,0,1) 0%, rgba(255,149,0,1) 45%, rgba(255,255,255,1) 100%);
+}
+
+.photoContainer {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(auto-fill, minmax(calc(15.5em + 15.5vw), 1fr));
+    gap: 2vw;
+    grid-row-gap: 18vh;
+    justify-self: center;
+    margin-top: 4vw;
+    margin-bottom: 4vw;
+}
+
+.memberContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.teamTitle {
+    color: white;
+    font-size: 4.5vw;
+}
+
+.memberPhoto {
+    width: 35.5vw;
+    height: 35.5vw;
+    z-index: 2;
+    transition: all 0.5s ease-in-out;
+    position: absolute;
+    border-radius: 6vw;
+}
+  
+.infoContainer {
+    display: none;
+    width: 35.5vw;
+    height: 35.5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-color: #fff;
+    z-index: 0;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+    transition: 0.5s ease-in-out;
+    border-radius: 6vw;
+}
+
+/* team info card animation */
+.memberContainer:hover > .memberPhoto {
+    transform: translate(-4vw, -4vw);
+}
+
+.memberContainer:hover > .infoContainer {
+    transform: translate(4vw, 8vw);
+}
+
+.memberName {
+    font-size: 4vw;
+    margin: 0;
+}
+
+.memberLink {
+    display: flex;
+    flex-direction: row;
+}
+
+/* compatibility for mobile and tablet users */
+@media only screen and (max-width: 768px) {
+    .teamTitle {
+        font-size: 8vw;
+    }
+    .photoContainer {
+        grid-row-gap: 18vw;
+    }
+    .memberPhoto {
+        width: 80vw;
+        height: auto;
+    }
+    .infoContainer {
+        width: 80vw;
+        height: 80vw;
+    }
+    .memberContainer:hover > .memberPhoto {
+        transform: translate(-8vw, -8vw);
+    }
+    .memberContainer:hover > .infoContainer {
+        transform: translate(8vw, 15vw);
+    }
+    .memberName {
+        font-size: 7vw;
+    }
+    .navbar {
+        height: 13vw;
+    }
+    .links {
+        font-size: 2.8vw;
+    }
+    .appLogo {
+        width: 26vw;
+        height: auto;
+    }
+    .layers {
+        top: 16vw;
+        opacity: 0.5;
+    }
+    .frontContainer {
+        height: 150vw;
+        width: 100%;
+        justify-content: center;
+        margin: 0;
+    }
+    .frontContainerContainer {
+        z-index: 10;
+        margin: 4.5vw;
+    }
+    .frontContainerText {
+        color: white;
+        font-size: 10vw;
+    }
+    .getStartedButton {
+        font-size: 6vw;
+        color: white;
+        background-color: black;
+        padding: 1.5vw;
+        border-radius: 5vw;
+    }
+    .getStartedButton:hover >.buttonText{
+        text-decoration: none;
+    }
+    .rightArrow {
+        display: none;
+    }
+}

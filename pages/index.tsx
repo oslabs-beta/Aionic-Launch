@@ -2,6 +2,8 @@ import Head from 'next/head';
 import NavBar from "./components/(navbar)"
 import FrontPage from './components/(frontpage)';
 import OurTeam from './components/(ourteam)';
+import HowItWorks from './components/(howitworks)';
+import GettingStarted from './components/(gettingstarted)';
 import styles from '../styles/Home.module.css';
 
 export default function Home() {
@@ -17,6 +19,8 @@ export default function Home() {
         <NavBar/>
         <div className={styles.mainContainer}>
           <FrontPage/>
+          <HowItWorks/>
+          <GettingStarted/>
           <OurTeam/>
         </div>
       </main>

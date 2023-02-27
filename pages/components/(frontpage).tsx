@@ -1,5 +1,5 @@
 import styles from '../../styles/Home.module.css';
-import { useState } from 'react'
+import { useState } from 'react';
 
 const FrontPage = () => {
     const [mouseX, setMouseX] = useState(0);
@@ -12,11 +12,15 @@ const FrontPage = () => {
         setMouseY(Y);
     }
 
+    const redirectToGettingStarted = () => {
+        location.assign('#gettingStarted')
+    }
+
     return (
         <div className={styles.frontContainer} onMouseMove={mouseEventHandler}>
             <div className={styles.frontContainerContainer}>
                 <h2 className={styles.frontContainerText}>Start tracking your workflow history with ease</h2>
-                <button className={styles.getStartedButton}>
+                <button className={styles.getStartedButton} onClick={redirectToGettingStarted}>
                     <p className={styles.buttonText}>Click here to get started</p>
                     <div className={styles.rightArrow}>
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-arrow-right-short" viewBox="0 0 16 16">

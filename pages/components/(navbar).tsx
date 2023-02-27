@@ -14,10 +14,10 @@ const NavBar = () => {
             <div className={styles.navbarLinks}>
                 <ul className={styles.navbarLinks}>
                     <li>
-                        <Link className={styles.links} href="/">Getting Started</Link>
+                        <Link className={styles.links} href="#howItWorks">How It Works</Link>
                     </li>
                     <li>
-                        <Link className={styles.links} href="/">How It Works</Link>
+                        <Link className={styles.links} href="#gettingStarted">Getting Started</Link>
                     </li>
                     <li>
                         <Link className={styles.links} href="#team">Our Team</Link>
@@ -34,7 +34,7 @@ const NavBar = () => {
                     width: 2.5vw;
                     height: 2.5vw;
                 }
-                @media only screen and (max-width: 768px) {
+                @media only screen and (max-width: 740px) {
                     .bi {
                         width: 7vw;
                         height: 7vw;

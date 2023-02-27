@@ -13,7 +13,7 @@
     position: relative;
     height: 5.5vw;
     width: 100%;
-    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 2px 0px 1px rgba(0, 0, 0, 0.2);
 }
 
 .appLogo {
@@ -62,13 +62,12 @@
 .frontContainer {
     width: 100%;
     height: 50vw;
-    background: rgb(255,111,0);
-    background: linear-gradient(90deg, rgba(255,111,0,1) 0%, rgba(255,149,0,1) 45%, rgba(255,255,255,1) 100%);
     display: flex;
     justify-content: left;
     align-items: center;
     padding-top: 2vw;
     padding-bottom: 4vw;
+    background: linear-gradient(90deg, rgba(255,111,0,1) 0%, rgba(255,149,0,1) 45%, rgba(255,255,255,1) 100%);
 }
 
 .layers {
@@ -199,6 +198,38 @@
     border-radius: 6vw;
 }
 
+/* styling for how it works section */
+.workContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0px -2px 0px 1px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    padding-top: 5vw;
+    padding-bottom: 5vw;
+}
+
+.workTitle {
+    font-size: 5vw;
+}
+
+.diagram {
+    margin-top: 5vw;
+    margin-bottom: 5vw;
+    height: auto;
+    width: 70vw;
+    box-shadow: 0px 0px 0px 3px rgba(0, 0, 0, 0.2);
+}
+
+.workText {
+    margin-left: 10vw;
+    margin-right: 10vw;
+    line-height: 3.5vw;
+    font-size: 2vw;
+}
+
 /* team info card animation */
 .memberContainer:hover > .memberPhoto {
     transform: translate(-4vw, -4vw);
@@ -218,8 +249,21 @@
     flex-direction: row;
 }
 
+/* styling from getting started container */
+.startedContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0px 2px 0px 1px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    padding-top: 5vw;
+    padding-bottom: 5vw;
+}
+
 /* compatibility for mobile and tablet users */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 740px) {
     .teamTitle {
         font-size: 8vw;
     }
@@ -247,10 +291,14 @@
         height: 13vw;
     }
     .links {
-        font-size: 2.8vw;
+        font-size: 3.1vw;
+    }
+    .links:hover {
+        background-color: transparent;
+        color: black;
     }
     .appLogo {
-        width: 26vw;
+        width: 30vw;
         height: auto;
     }
     .layers {
@@ -261,7 +309,6 @@
         height: 150vw;
         width: 100%;
         justify-content: center;
-        margin: 0;
     }
     .frontContainerContainer {
         z-index: 10;
@@ -283,5 +330,20 @@
     }
     .rightArrow {
         display: none;
+    }
+    
+    .workTitle {
+        font-size: 9vw;
+    }
+    
+    .diagram {
+        width: 92vw;
+    }
+
+    .workText {
+        margin-left: 5vw;
+        margin-right: 5vw;
+        line-height: 8vw;
+        font-size: 5vw;
     }
 }

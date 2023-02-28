@@ -8,7 +8,7 @@ const GettingStarted = () => {
         <div className={styles.startedContainer} id="gettingStarted">
             <h1 className={styles.startedTitle}>Getting Started</h1>
             <div className={styles.stepsContainer}>
-                <Instructions stepNumber={1} instructions='Go to our Github repository and fork the repository'/>
+                <Instructions stepNumber={1} instructions='Go to our Github repository, read the ReadMe for detailed instructions and fork the repository ' link="https://github.com/oslabs-beta/Aionic"/>
                 <p className={styles.noteText}>** Follow steps 2-4 if setting up Aionic for the first time. Else skip to step 6. **</p>
                 <Instructions stepNumber={2} instructions='Setup Github OAuth and save the client ID and secret. For more detailed instructions on the setup please click ' link='https://docs.github.com/en/apps/oauth-apps/building-oauth-apps/creating-an-oauth-app'/>
                 <Instructions stepNumber={3} instructions='Setup a MongoDB database and save the URI with an admin user and password. For more detailed instructions on the setup please click ' link='https://www.mongodb.com/docs/manual/tutorial/getting-started'/>

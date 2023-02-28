@@ -153,7 +153,7 @@
 .photoContainer {
     display: grid;
     width: 100%;
-    grid-template-columns: repeat(auto-fill, minmax(calc(8.5em + 8.5vw), 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(calc(15.5em + 15.5vw), 1fr));
     gap: 2.4vw;
     grid-row-gap: 18vh;
     justify-self: center;
@@ -306,6 +306,23 @@
 }
 
 /* compatibility for mobile and tablet users */
+@media only screen and (max-width: 2216px) {
+    .photoContainer {
+        grid-template-columns: repeat(auto-fill, minmax(calc(12.5em + 12.5vw), 1fr));
+    }
+}
+
+@media only screen and (max-width: 2216px) {
+    .photoContainer {
+        grid-template-columns: repeat(auto-fill, minmax(calc(10.5em + 10.5vw), 1fr));
+    }
+}
+
+@media only screen and (max-width: 1419px) {
+    .photoContainer {
+        grid-template-columns: repeat(auto-fill, minmax(calc(8.5em + 8.5vw), 1fr));
+    }
+}
 
 @media only screen and (max-width: 950px) {
     .photoContainer {

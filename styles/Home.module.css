@@ -153,8 +153,8 @@
 .photoContainer {
     display: grid;
     width: 100%;
-    grid-template-columns: repeat(auto-fill, minmax(calc(15.5em + 15.5vw), 1fr));
-    gap: 2vw;
+    grid-template-columns: repeat(auto-fill, minmax(calc(8.5em + 8.5vw), 1fr));
+    gap: 2.4vw;
     grid-row-gap: 18vh;
     justify-self: center;
     margin-top: 4vw;
@@ -174,8 +174,8 @@
 }
 
 .memberPhoto {
-    width: 35.5vw;
-    height: 35.5vw;
+    width: 20.5vw;
+    height: 20.5vw;
     z-index: 2;
     transition: all 0.5s ease-in-out;
     position: absolute;
@@ -184,8 +184,8 @@
   
 .infoContainer {
     display: none;
-    width: 35.5vw;
-    height: 35.5vw;
+    width: 20.5vw;
+    height: 20.5vw;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -219,28 +219,28 @@
     margin-top: 5vw;
     margin-bottom: 5vw;
     height: auto;
-    width: 70vw;
+    width: 60vw;
     box-shadow: 0px 0px 0px 3px rgba(0, 0, 0, 0.2);
 }
 
 .workText {
     margin-left: 10vw;
     margin-right: 10vw;
-    line-height: 3.5vw;
-    font-size: 2vw;
+    line-height: 2.5vw;
+    font-size: 1.5vw;
 }
 
 /* team info card animation */
 .memberContainer:hover > .memberPhoto {
-    transform: translate(-4vw, -4vw);
+    transform: translate(-2vw, -4vw);
 }
 
 .memberContainer:hover > .infoContainer {
-    transform: translate(4vw, 8vw);
+    transform: translate(2vw, 4vw);
 }
 
 .memberName {
-    font-size: 4vw;
+    font-size: 2vw;
     margin: 0;
 }
 
@@ -249,7 +249,7 @@
     flex-direction: row;
 }
 
-/* styling from getting started container */
+/* styling for getting started container */
 .startedContainer {
     display: flex;
     flex-direction: column;
@@ -258,17 +258,74 @@
     background-color: white;
     box-shadow: 0px 2px 0px 1px rgba(0, 0, 0, 0.2);
     z-index: 1;
-    padding-top: 5vw;
-    padding-bottom: 5vw;
+    padding: 5vw 6vw;
+}
+
+.startedTitle {
+    font-size: 5vw;
+}
+
+.stepsContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.noteText {
+    color: #ed7643;
+    text-align: center;
+    font-size: 1.25vw;
+    margin: auto;
+}
+
+/* styling forinstructions container */
+.instructionsContainer {
+    display: flex;
+    flex-direction: row;
+    font-size: 1.5vw;
+    align-items: center;
+    margin: 1vw 5vw;
+}
+
+.stepNumber {
+    display: flex;
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+    width: 1vw;
+    height: 1vw;
+    padding: 2vw;
+    justify-content: center;
+    align-items: center;
+    margin-right: 2vw;
+}
+
+.stepLink:hover {
+    color: rgba(226, 96, 49, 1);
+    text-decoration: underline;
 }
 
 /* compatibility for mobile and tablet users */
+
+@media only screen and (max-width: 950px) {
+    .photoContainer {
+        grid-template-columns: repeat(auto-fill, minmax(calc(15.5em + 15.5vw), 1fr));
+    }
+
+    .memberPhoto {
+        width: 35.5vw;
+        height: 35.5vw;
+    }
+      
+    .infoContainer {
+        width: 35.5vw;
+        height: 35.5vw;
+    }
+}
+
 @media only screen and (max-width: 740px) {
     .teamTitle {
         font-size: 8vw;
-    }
-    .photoContainer {
-        grid-row-gap: 18vw;
     }
     .memberPhoto {
         width: 80vw;
@@ -345,5 +402,30 @@
         margin-right: 5vw;
         line-height: 8vw;
         font-size: 5vw;
+    }
+    
+    .startedTitle {
+        font-size: 8.5vw;
+    }
+    
+    .noteText {
+        color: #ed7643;
+        text-align: center;
+        font-size: 4vw;
+    }
+    
+    /* styling forinstructions container */
+    .instructionsContainer {
+        font-size: 4.5vw;
+    }
+    
+    .stepNumber {
+        padding: 5vw;
+        margin-right: 4vw;
+    }
+    
+    .stepLink:hover {
+        color: rgba(226, 96, 49, 1);
+        text-decoration: underline;
     }
 }

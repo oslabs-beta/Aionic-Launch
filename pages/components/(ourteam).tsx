@@ -126,10 +126,10 @@ const OurTeam = () => {
             </div>
             <style jsx>{`
                 .bi {
-                    width: 4vw;
-                    height: 4vw;
-                    margin-left: 1vw;
-                    margin-right: 1vw;
+                    width: 2vw;
+                    height: 2vw;
+                    margin-left: 0.25vw;
+                    margin-right: 0.25vw;
                 }
                 @media only screen and (max-width: 737px) {
                     .bi {

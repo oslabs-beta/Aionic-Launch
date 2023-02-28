@@ -6,6 +6,7 @@ import HowItWorks from './components/(howitworks)';
 import GettingStarted from './components/(gettingstarted)';
 import styles from '../styles/Home.module.css';
 
+//displaying all the components on the root html
 export default function Home() {
   return (
     <>

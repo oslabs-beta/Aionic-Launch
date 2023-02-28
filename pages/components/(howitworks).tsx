@@ -1,6 +1,7 @@
 import styles from '../../styles/Home.module.css';
 import Image from 'next/image';
 
+//renders the how it works portion of the page
 const HowItWorks = () => {
     return (
         <div className={styles.workContainer} id="howItWorks">

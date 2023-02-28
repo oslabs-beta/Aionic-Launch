@@ -2,9 +2,11 @@ import styles from '../../styles/Home.module.css';
 import { useState } from 'react';
 
 const FrontPage = () => {
+    //state for mouse position
     const [mouseX, setMouseX] = useState(0);
     const [mouseY, setMouseY] = useState(0);
 
+    //upon mouse movement on the screen, this helper function will invoke and update the mouse position state
     const mouseEventHandler = (e: React.MouseEvent): void => {
         let X: any = e.pageX;
         let Y: any = e.pageY;
@@ -12,10 +14,12 @@ const FrontPage = () => {
         setMouseY(Y);
     }
 
+    //when use clicks on the click here to get started button, it'll redirect user to the get started section of the app
     const redirectToGettingStarted = () => {
         location.assign('#gettingStarted')
     }
 
+    //rendering the main section of the app
     return (
         <div className={styles.frontContainer} onMouseMove={mouseEventHandler}>
             <div className={styles.frontContainerContainer}>
@@ -29,6 +33,7 @@ const FrontPage = () => {
                     </div>
                 </button>
             </div>
+            {/*image layers*/}
             <div className={styles.layers} id="stars" />
             <div className={styles.layers} id="planet1" />
             <div className={styles.layers} id="planet2" />
@@ -41,6 +46,7 @@ const FrontPage = () => {
                     height: auto;
                     width: 5vw;
                 }
+                /*translate the different image layers based on mouse movement to give it a parallax effect*/
                 @media only screen and (min-width: 768px) {
                     #stars {
                         transform: translate(${mouseX/100*2}px, ${mouseY/100*2}px);

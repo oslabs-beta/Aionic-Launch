@@ -2,18 +2,22 @@ import styles from '../../styles/Home.module.css';
 import Image from 'next/image';
 import Link from 'next/link';
 
+//renders the team section of the page
 const OurTeam = () => {
     return (
         <div className={styles.teamContainer} id="team">
             <h1 className={styles.teamTitle}>Meet Our Team!</h1>
+            {/* Nathan's profile*/}
             <div className={styles.photoContainer}>
                 <div className={styles.memberContainer}>
+                    {/* Nathan's photo sized to its default pixel size. Resized in css to be smaller*/}
                     <Image id="team1" className={styles.memberPhoto}
                         src="/../public/Team1.png"
                         alt="Team Member"
                         width={1000}
                         height={1000}
                     />
+                    {/* Nathan's info card*/}
                     <div className={styles.infoContainer}>
                         <h3 className={styles.memberName}>Nathan Lui</h3>
                         <div className={styles.memberLink}>
@@ -36,13 +40,16 @@ const OurTeam = () => {
                         </div>
                     </div>
                 </div>
+                {/* Jian Cheng's profile*/}
                 <div className={styles.memberContainer}>
+                    {/* Jian Cheng's photo sized to its default pixel size. Resized in css to be smaller*/}
                     <Image id="team2" className={styles.memberPhoto}
                         src="/../public/Team2.jpeg"
                         alt="Team Member"
                         width={1000}
                         height={1000}
                     />
+                    {/* Jian Cheng's info card*/}
                     <div className={styles.infoContainer}>
                         <h3 className={styles.memberName}>Jian Cheng Lu</h3>
                         <div className={styles.memberLink}>
@@ -65,13 +72,16 @@ const OurTeam = () => {
                         </div>
                     </div>
                 </div>
+                {/* Tim's profile*/}
                 <div className={styles.memberContainer}>
+                    {/* Tim's photo sized to its default pixel size. Resized in css to be smaller*/}
                     <Image id="team3" className={styles.memberPhoto}
                         src="/../public/Team3.jpeg"
                         alt="Team Member"
                         width={1000}
                         height={1000}
                     />
+                    {/* Tim's info card*/}
                     <div className={styles.infoContainer}>
                         <h3 className={styles.memberName}>Timothy Kwon</h3>
                          <div className={styles.memberLink}>
@@ -94,13 +104,16 @@ const OurTeam = () => {
                         </div>
                     </div>
                 </div>
+                {/* Ari's profile*/}
                 <div className={styles.memberContainer}>
+                    {/* Ari's photo sized to its default pixel size. Resized in css to be smaller*/}
                     <Image id="team4" className={styles.memberPhoto}
                         src="/../public/Team4.jpeg"
                         alt="Team Member"
                         width={1000}
                         height={1000}
                     />
+                    {/* Ari's info card*/}
                     <div className={styles.infoContainer}>
                         <h3 className={styles.memberName}>Ari Bengiyat</h3>
                         <div className={styles.memberLink}>

@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import styles from '../../styles/Home.module.css';
+import path from 'path';
 
 //renders the navbar
 const NavBar = () => {
@@ -8,7 +9,7 @@ const NavBar = () => {
         <div className={styles.navbar}>
             {/*displaying our logo with the image default pixels, which will be resized in the css*/}
             <Image className={styles.appLogo}
-                src="/../public/Aionic-Logo.png"
+                src="/Aionic-Logo.png"
                 alt="Aionic Logo"
                 width={946}
                 height={298}

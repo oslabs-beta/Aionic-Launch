@@ -10,7 +10,7 @@ const HowItWorks = () => {
                 Aionic is a platform that allows you to track and manage your cluster configuration history and streamlines the recovery process if your cluster goes down due to a faulty configuation.
             </p>
             <Image className={styles.diagram}
-                src="/../public/architecture.png"
+                src="/architecture.png"
                 alt="Architechure Diagram"
                 width={3045}
                 height={2208}

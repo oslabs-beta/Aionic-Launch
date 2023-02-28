@@ -1,6 +1,7 @@
 import styles from '../../styles/Home.module.css';
 import Image from 'next/image';
 import Link from 'next/link';
+import path from 'path';
 
 //renders the team section of the page
 const OurTeam = () => {
@@ -12,7 +13,7 @@ const OurTeam = () => {
                 <div className={styles.memberContainer}>
                     {/* Nathan's photo sized to its default pixel size. Resized in css to be smaller*/}
                     <Image id="team1" className={styles.memberPhoto}
-                        src="/../public/Team1.png"
+                        src="/Team1.png"
                         alt="Team Member"
                         width={1000}
                         height={1000}
@@ -44,7 +45,7 @@ const OurTeam = () => {
                 <div className={styles.memberContainer}>
                     {/* Jian Cheng's photo sized to its default pixel size. Resized in css to be smaller*/}
                     <Image id="team2" className={styles.memberPhoto}
-                        src="/../public/Team2.jpeg"
+                        src="/Team2.jpeg"
                         alt="Team Member"
                         width={1000}
                         height={1000}
@@ -76,7 +77,7 @@ const OurTeam = () => {
                 <div className={styles.memberContainer}>
                     {/* Tim's photo sized to its default pixel size. Resized in css to be smaller*/}
                     <Image id="team3" className={styles.memberPhoto}
-                        src="/../public/Team3.jpeg"
+                        src="/Team3.jpeg"
                         alt="Team Member"
                         width={1000}
                         height={1000}
@@ -108,7 +109,7 @@ const OurTeam = () => {
                 <div className={styles.memberContainer}>
                     {/* Ari's photo sized to its default pixel size. Resized in css to be smaller*/}
                     <Image id="team4" className={styles.memberPhoto}
-                        src="/../public/Team4.jpeg"
+                        src="/Team4.jpeg"
                         alt="Team Member"
                         width={1000}
                         height={1000}

@@ -13,10 +13,10 @@ const OurTeam = () => {
                 <div className={styles.memberContainer}>
                     {/* Nathan's photo sized to its default pixel size. Resized in css to be smaller*/}
                     <Image id="team1" className={styles.memberPhoto}
-                        src="/Team1.png"
+                        src="/Team1.jpg"
                         alt="Team Member"
-                        width={1000}
-                        height={1000}
+                        width={1180}
+                        height={1200}
                     />
                     {/* Nathan's info card*/}
                     <div className={styles.infoContainer}>

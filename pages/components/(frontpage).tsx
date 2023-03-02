@@ -1,4 +1,5 @@
 import styles from '../../styles/Home.module.css';
+import Link from 'next/link'
 import { useState } from 'react';
 
 const FrontPage = () => {
@@ -32,6 +33,9 @@ const FrontPage = () => {
                         </svg>
                     </div>
                 </button>
+                <Link href="https://medium.com/@aionicoslab/streamline-your-kubernetes-rollback-process-with-aionic-a-lightweight-historical-visualization-311554fef127">
+                    <p className={styles.mediumText}>Read more about Aionic here</p>
+                </Link>
             </div>
             {/*image layers*/}
             <div className={styles.layers} id="stars" />

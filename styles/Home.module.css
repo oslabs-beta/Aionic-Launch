@@ -26,6 +26,7 @@
     flex-direction: row;
     align-items: center;
     list-style-type: none;
+    padding-left: 10px;
 }
 
 .links {
@@ -114,6 +115,18 @@
 .getStartedButton:hover > .buttonText {
     text-decoration: underline;
     transition: 0.12s;
+}
+
+.mediumText {
+    color: white;
+    font-size: 1.5vw;
+    margin-left: 0.35vw;
+    margin-top: -1vw;
+}
+
+.mediumButton:hover {
+    color: white;
+    text-decoration: underline;
 }
 
 /* layers for parallax effect */
@@ -405,7 +418,11 @@
     .rightArrow {
         display: none;
     }
-    
+    .mediumText {
+        font-size: 4vw;
+        text-align: center;
+        margin-top: 5vw;
+    }
     .workTitle {
         font-size: 9vw;
     }

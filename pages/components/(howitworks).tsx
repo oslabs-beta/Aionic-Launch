@@ -7,7 +7,7 @@ const HowItWorks = () => {
         <div className={styles.workContainer} id="howItWorks">
             <h2 className={styles.workTitle}>How does it work?</h2>
             <p className={styles.workText}>
-                Aionic is a platform that allows you to track and manage your cluster configuration history and streamlines the recovery process if your cluster goes down due to a faulty configuation.
+                Aionic is a platform that allows you to track and manage your cluster configuration history and streamlines the recovery process if your cluster goes down due to a faulty configuration.
             </p>
             <Image className={styles.diagram}
                 src="/architecture.png"
